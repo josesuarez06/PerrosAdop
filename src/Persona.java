@@ -6,6 +6,8 @@ public class Persona {
     private int edad;
     private List<Perro> perros = new ArrayList<>();
 
+    public Persona(String nombre, String apellido, int edad, String documento) {
+    }
 
 
     public boolean adoptarPerro(Perro perro) {
@@ -46,5 +48,13 @@ public class Persona {
                 ", edad=" + edad +
                 ", perros=" + perros +
                 '}';
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
     }
 }

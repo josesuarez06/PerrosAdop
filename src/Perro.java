@@ -1,5 +1,8 @@
 public class Perro {
-    private String placa, nombre, raza, tamaño;
+    private String placa;
+    private String nombre;
+    private String raza;
+    private String tamaño;
     private static int edad;
 
     public Perro(String placa, String nombre, String raza, String tamaño, int edad) {
@@ -46,11 +49,11 @@ public class Perro {
         return edad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public static void setEdad(int edad) {
+        Perro.edad = edad;
     }
 
-    public Perro() {
+    public Perro(String placa, String nombre, String raza, int edad, String tamaño) {
         super();
     }
 
